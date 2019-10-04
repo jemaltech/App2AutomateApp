@@ -2,7 +2,6 @@
 @import '~bootstrap/scss/functions';
 @import '~bootswatch/dist/darkly/variables';
 @import '~bootstrap/scss/variables';
-
 /* ==============================================================
 Bootstrap tweaks
 ===============================================================*/
@@ -71,10 +70,6 @@ Generic styles
 .readonly {
   background-color: #eee;
   opacity: 1;
-}
-
-.footer {
-  border-top: 1px solid rgba(0, 0, 0, 0.125);
 }
 
 .hand,
@@ -165,62 +160,45 @@ ui bootstrap tweaks
 
 /* jhipster-needle-scss-add-main JHipster will add new css style */
 
-/* ==========================================================================
-  custom styles for 21-Points Health
-  ==========================================================================*/
-.jh-card {
-  border: none !important;
-}
-.jh-navbar {
-  background-color: #009688 !important;
-}
-.blockquote {
-  padding: 0.5rem 1rem;
-  margin-bottom: 1rem;
-  font-size: 1rem !important;
-  font-weight: 100;
-  border-left: 0.25rem solid #eceeef;
-}
-a {
-  font-weight: normal !important;
-}
-.truncate {
-  width: 180px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  cursor: pointer;
-  &.cal-day-notes {
-    width: 150px;
-  }
-}
-.footer {
-  bottom: 0;
-  left: 0;
-  color: #666;
-  background: #eee;
-  border-top: 1px solid silver;
-  position: fixed;
+// custom css for home sections
+
+body,
+html {
   width: 100%;
-  padding: 10px;
-  padding-bottom: 0;
-  text-align: center;
-  z-index: 2;
-  font-size: 0.9em;
-  p {
-    margin-bottom: 7px;
-  }
+  height: 100%;
 }
-.thread-dump-modal-lock {
-  max-width: 450px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+
+// Typography
+.text-white-75 {
+  color: fade-out($white, 0.25);
 }
-/* Override Bootstrap's default vertical-align: top */
-.table {
-  th,
-  td {
-    vertical-align: middle !important;
-  }
+
+// Custom horizontal rules
+hr.divider {
+  max-width: 3.25rem;
+  border-width: 0.2rem;
+  border-color: $primary;
+}
+
+hr.light {
+  border-color: $white;
+}
+
+// Button restyling
+.btn {
+  font-family: $font-family-sans-serif;
+}
+
+.btn-xl {
+  padding: 1.25rem 2.25rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 10rem;
+}
+
+// Page section padding
+.page-section {
+  padding: 8rem 0;
 }
